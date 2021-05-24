@@ -1,7 +1,7 @@
 async function get_numbers()
 {
     speesoc.innerHTML = '';
-    const response = await fetch('/numbers');
+    const response = await fetch('/tuppersgraph3/numbers');
     const numbers = await response.json();
 
     for (let number of numbers)
@@ -20,7 +20,7 @@ async function get_numbers()
 async function savenum()
 {
     console.log("123wsqsawe")
-    await fetch('/numbers',
+    await fetch('/tuppersgraph3/numbers',
         {
             method: "POST",
             headers: 
